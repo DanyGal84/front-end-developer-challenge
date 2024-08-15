@@ -1,0 +1,8 @@
+@import '../../styles/settings';
+
+.container {
+  @include module;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}

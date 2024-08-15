@@ -1,0 +1,39 @@
+.sprite-button {
+  width: 50px; /* Adjust based on the individual icon size */
+  height: 50px; /* Adjust based on the individual icon size */
+  background-image: url('../../assets/images/talent-icons-sprite.png');
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.button-weight {
+  background-position: 0 0; /* Adjust based on the icon's position in the sprite */
+}
+
+.button-food {
+  background-position: -50px 0; /* Adjust based on the icon's position in the sprite */
+}
+
+.button-birthday {
+  background-position: -100px 0; /* Adjust based on the icon's position in the sprite */
+}
+
+.button-crown {
+  background-position: -150px 0; /* Adjust based on the icon's position in the sprite */
+}
+
+.button-ship {
+  background-position: -50px 0; /* Adjust based on the icon's position in the sprite */
+}
+.button-scubba {
+  background-position: -50px 0; /* Adjust based on the icon's position in the sprite */
+}
+
+.button-lightning {
+  background-position: -50px 0; /* Adjust based on the icon's position in the sprite */
+}
+
+.button-skull {
+  background-position: -50px 0; /* Adjust based on the icon's position in the sprite */
+}
