@@ -1,0 +1,39 @@
+// FONTS
+$font: 'Roboto', 'Arial', sans-serif;
+
+// COLORS
+$black: #000000;
+$dark: #444444;
+$grey: #cccccc;
+$light: #eeE5e5;
+$white: #ffffff;
+$light-blue: #6a9fd7;
+$-dark-blue: #374f65;
+$navy: #007bff;
+$snow: #F1F1F1;
+$red: #CA0026;
+
+// GENERAL
+@mixin module {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+// ANIMATION
+@mixin trans {
+  transition: all 0.3s ease;
+}
+
+// MEDIA QUERIES
+@mixin desktop {
+  @media screen and (min-width: 1025px) { @content; }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 760px) { @content; }
+}
+
+@mixin mobileOnly {
+  @media screen and (max-width: 760px) { @content; }
+}
