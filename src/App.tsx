@@ -1,9 +1,9 @@
 import React from 'react';
+import Layout from './components/Layout/Default';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+      <Layout>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -15,8 +15,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-    </div>
+      </Layout>
   );
 }
 
