@@ -4,5 +4,6 @@
   @include module;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin-top: 2rem;
 }

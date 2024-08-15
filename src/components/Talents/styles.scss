@@ -1,3 +1,5 @@
+@import "../../styles/settings";
+
 .sprite-button {
   width: 50px; /* Adjust based on the individual icon size */
   height: 50px; /* Adjust based on the individual icon size */
@@ -8,32 +10,73 @@
 }
 
 .button-weight {
-  background-position: 0 0; /* Adjust based on the icon's position in the sprite */
+  background-position: -2px -2px; /* Adjust based on the icon's position in the sprite */
+}
+
+.button-weight .selected {
+  background-position: -2px -52px; /* Adjust based on the icon's position in the sprite */
+  border: 2px solid $navy;
 }
 
 .button-food {
   background-position: -50px 0; /* Adjust based on the icon's position in the sprite */
 }
 
+.button-food .selected {
+  background-position: -52px -52px; /* Adjust based on the icon's position in the sprite */
+  border: 2px solid $navy;
+}
+
 .button-birthday {
   background-position: -100px 0; /* Adjust based on the icon's position in the sprite */
+}
+
+.button-birthday .selected {
+  background-position: -102px -52px; /* Adjust based on the icon's position in the sprite */
+  border: 2px solid $navy;
 }
 
 .button-crown {
   background-position: -150px 0; /* Adjust based on the icon's position in the sprite */
 }
 
-.button-ship {
-  background-position: -50px 0; /* Adjust based on the icon's position in the sprite */
+.button-crown .selected {
+  background-position: -152px -52px; /* Adjust based on the icon's position in the sprite */
+  border: 2px solid $navy;
 }
+
+.button-ship {
+  background-position: -200px 0; /* Adjust based on the icon's position in the sprite */
+}
+
+.button-ship .selected {
+  background-position: -202px -52px; /* Adjust based on the icon's position in the sprite */
+  border: 2px solid $navy;
+}
+
 .button-scubba {
-  background-position: -50px 0; /* Adjust based on the icon's position in the sprite */
+  background-position: -250px 0; /* Adjust based on the icon's position in the sprite */
+}
+
+.button-scubba .selected {
+  background-position: -252px -52px; /* Adjust based on the icon's position in the sprite */
+  border: 2px solid $navy;
 }
 
 .button-lightning {
-  background-position: -50px 0; /* Adjust based on the icon's position in the sprite */
+  background-position: -300px 0; /* Adjust based on the icon's position in the sprite */
+}
+
+.button-lightning .selected {
+  background-position: -302px -52px; /* Adjust based on the icon's position in the sprite */
+  border: 2px solid $navy;
 }
 
 .button-skull {
-  background-position: -50px 0; /* Adjust based on the icon's position in the sprite */
+  background-position: -350px 0; /* Adjust based on the icon's position in the sprite */
+}
+
+.button-skull .selected {
+  background-position: -352px -52px; /* Adjust based on the icon's position in the sprite */
+  border: 2px solid $navy;
 }

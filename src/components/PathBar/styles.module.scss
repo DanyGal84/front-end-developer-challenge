@@ -1,0 +1,10 @@
+@import "../../styles/settings";
+
+.bar {
+  width: 10rem;
+  height: 5px;
+  background: $dark-grey;
+  &.ready-next {
+    background: $grey;
+  }
+}
