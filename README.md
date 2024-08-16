@@ -8,9 +8,6 @@ This React application simulates the rune tree feature within TitanStar Legends,
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
