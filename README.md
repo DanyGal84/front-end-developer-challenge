@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# TitanStar Legends Rune Tree Simulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React application simulates the rune tree feature within TitanStar Legends, allowing players to replicate and share their in-game loadouts with the community. The app allows players to spend talent points on runes in a specific order, ensuring the correct sequence is followed and providing a visual display of their point allocation.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Point Allocation:** Left-click to add a point to a rune, right-click to remove a point.
+- **Sequence Enforcement:** Points must be allocated in a specific sequence, and users cannot allocate points out of order.
+- **Point Limit:** Players are limited to spending a total of 6 points.
+- **Visual Feedback:** The application displays the current point total and highlights selected runes.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **React** (v18.x): A JavaScript library for building user interfaces.
+- **TypeScript**: Superset of JavaScript that adds static typing.
+- **Node.js** (v20.8.1): JavaScript runtime environment used for server-side scripting and development tools.
+- **npm** (v10.1.0): Node package manager used for managing dependencies.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ensure you have Node.js and npm installed on your machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js**: v20.8.1
+- **npm**: v10.1.0
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Steps
 
-### `npm run eject`
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/DanyGal84/front-end-developer-challenge.git
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+2. **Install dependencies:**
+   ```bash
+   npm install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Start the development server:**
+   ```bash
+   npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This will start the application in development mode and open it in your default web browser. The app will be available at `http://localhost:3000`.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Usage
 
-## Learn More
+Once the app is running:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Add Points:** Left-click on a rune to add a point. Ensure you follow the correct sequence of runes.
+2. **Remove Points:** Right-click on a rune to remove a point.
+3. **Point Limit:** Keep track of the total points displayed. You cannot exceed 6 points.
