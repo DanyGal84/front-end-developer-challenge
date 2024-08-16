@@ -1,20 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import './styles.scss';
 
 interface ButtonProps {
   className: string;
+  selected: boolean;
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  onContextMenu: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-const SpriteButton: React.FC<ButtonProps> = ({ className }) => {
-  const [active, setActive] = useState(false);
-
-  const onAddTalent = () => {
-    setActive(!active);
-  }
-
+const SpriteButton: React.FC<ButtonProps> = ({ className, selected, onClick, onContextMenu }) => {
 
   return (
-    <button className={`sprite-button ${className} ${active ? 'selected' : ''}`} onClick={onAddTalent}></button>
+    <button className={`sprite-button ${className} ${selected ? 'selected' : ''}`} onClick={(e) => onClick(e)} onContextMenu={(e) => onContextMenu(e)}></button>
   );
 }
 
