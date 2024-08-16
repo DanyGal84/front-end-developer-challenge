@@ -40,10 +40,6 @@ main {
   animation: fadeIn 0.3s linear;
 }
 
-section {
-  width: 100%;
-}
-
 a, button {
   color: $black;
   display: inline-block;
@@ -58,58 +54,10 @@ picture, img {
   line-height: 0;
 }
 
-span, b, del, i {
-  display: inline-block;
-}
-
-hr {
-  width: 100%;
-  display: block;
-  margin: 1.5rem 0;
-  border: 0.5px solid $light;
-}
-
-label {
-  width: 100%;
-  display: inline-block;
-}
-
 button {
   display: inline-block;
   font-size: 16px;
   font-family: $font;
   border: none;
   background-color: white;
-}
-
-input, textarea, select {
-  width: 100%;
-  display: block;
-  font-family: $font;
-  font-size: 16px;
-  font-weight: 300;
-  padding: 0.75rem;
-  box-shadow: none;
-  color: $black;
-  background-color: white;
-  border: 1px solid $light;
-  @include trans;
-  &:focus {
-    border-color: $navy;
-  }
-  &:disabled, &.disabled {
-    cursor: not-allowed;
-    background-color: $snow;
-  }
-  &.error {
-    border-color: $red;
-  }
-}
-
-select {
-  background-color: transparent;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  &::-ms-expand { display: none; }
 }
