@@ -144,7 +144,7 @@ const HomePage: React.FC = () => {
       <div className={styles.pathContainer}>
         <div className={styles.talentPath}>
           <TalentPath pathNumber='1'>
-            {runes1.map((rune) => (
+            {runes1.map(rune => (
               <>
                 <SpriteButton key={rune.id} className={rune.spriteName} selected={rune.selected} onClick={(e) => handleLeftClick(rune, e, 1)} onContextMenu={(e) => handleRightClick(rune, e, 1)}/>
                 {!rune.last ? <PathBar/> : null}
@@ -152,7 +152,7 @@ const HomePage: React.FC = () => {
             ))}
           </TalentPath>
           <TalentPath pathNumber='2'>
-            {runes2.map((rune) => (
+            {runes2.map(rune => (
               <>
                 <SpriteButton key={rune.id} className={rune.spriteName} selected={rune.selected} onClick={(e) => handleLeftClick(rune, e, 2)} onContextMenu={(e) => handleRightClick(rune, e, 2)}/>
                 {!rune.last ? <PathBar/> : null}

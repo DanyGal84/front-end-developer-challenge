@@ -3,12 +3,16 @@
 .sprite-button {
   width: 50px; /* Adjust based on the individual icon size */
   height: 50px; /* Adjust based on the individual icon size */
+  margin: 0.5rem;
   background-image: url('../../assets/images/talent-icons-sprite.png');
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
   &.disabled {
     cursor: not-allowed;
+  }
+  @include desktop {
+    margin: 0; /* Adjust based on the individual icon size */
   }
 }
 

@@ -6,9 +6,12 @@
   }
   .pathContainer {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
+    @include desktop {
+      flex-flow: row wrap;
+    }
 
     .talentPath {
       .spriteButton {

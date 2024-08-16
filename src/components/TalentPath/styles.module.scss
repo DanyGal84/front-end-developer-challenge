@@ -3,11 +3,18 @@
 .container {
   @include module;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
   p {
-    margin: 0 1rem 0 1rem
+    margin: 0.5rem;
+  }
+
+  @include desktop {
+    flex-flow: row wrap;
+    p {
+      margin: 0 1rem 0 1rem
+    }
   }
 }
