@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import './styles.scss';
 
 interface ButtonProps {
-  onClick: () => void;
   className: string;
 }
 
-const SpriteButton: React.FC<ButtonProps> = ({ onClick, className }) => (
-  <button className={`sprite-button ${className}`} onClick={onClick}></button>
-);
+const SpriteButton: React.FC<ButtonProps> = ({ className }) => {
+  const [active, setActive] = useState(false);
+
+  const onAddTalent = () => {
+    setActive(!active);
+  }
+
+
+  return (
+    <button className={`sprite-button ${className} ${active ? 'selected' : ''}`} onClick={onAddTalent}></button>
+  );
+}
+
 
 export default SpriteButton;

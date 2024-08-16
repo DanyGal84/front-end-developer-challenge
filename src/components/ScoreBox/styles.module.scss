@@ -1,0 +1,15 @@
+@import '../../styles/settings';
+
+.container {
+  text-align: center;
+  padding: 1rem;
+  border: 2px solid $dark-grey;
+  background: rgba(42, 112, 200, 0.2);
+  .score {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .spent {
+    color: $light-blue;
+  }
+}
